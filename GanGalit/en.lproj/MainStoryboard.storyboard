@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0CF-uc-Ia9">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Gan Galit View Controller - ברוכים הבאים-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="GanGalitViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9To-n3-q5f"/>
+                        <viewControllerLayoutGuide type="bottom" id="T0L-9n-hZx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-MZ-Z04">
+                                <rect key="frame" x="0.0" y="226" width="320" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="xNB-Hx-ew1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PtE-ai-x3N">
+                                <rect key="frame" x="86" y="66" width="149" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="BCO-aj-Lu1"/>
+                                    <constraint firstAttribute="height" constant="50" id="Fp1-ci-M23"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" translatesAutoresizingMaskIntoConstraints="NO" id="CXB-b0-Dri">
+                                <rect key="frame" x="63" y="124" width="194" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Xpq-3p-4TR"/>
+                                    <constraint firstAttribute="width" constant="194" id="c1C-TW-kex"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKD-Kl-kuw">
+                                <rect key="frame" x="140" y="482" width="41" height="30"/>
+                                <state key="normal" title="לכניסה">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kkJ-fp-Yrh" kind="push" id="nlR-v1-oG4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fKD-Kl-kuw" firstAttribute="centerX" secondItem="7Ns-MZ-Z04" secondAttribute="centerX" id="0CU-tc-X43"/>
+                            <constraint firstItem="CXB-b0-Dri" firstAttribute="top" secondItem="3" secondAttribute="top" constant="124" id="8uc-G0-8QQ"/>
+                            <constraint firstItem="7Ns-MZ-Z04" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="CB0-Bx-yMr"/>
+                            <constraint firstAttribute="bottom" secondItem="fKD-Kl-kuw" secondAttribute="bottom" constant="56" id="LnW-T5-41c"/>
+                            <constraint firstItem="PtE-ai-x3N" firstAttribute="top" secondItem="3" secondAttribute="top" constant="66" id="SUm-cC-aCp"/>
+                            <constraint firstItem="7Ns-MZ-Z04" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="ThB-cc-yM9"/>
+                            <constraint firstItem="CXB-b0-Dri" firstAttribute="centerX" secondItem="7Ns-MZ-Z04" secondAttribute="centerX" id="ZjL-ht-w8V"/>
+                            <constraint firstItem="CXB-b0-Dri" firstAttribute="centerX" secondItem="PtE-ai-x3N" secondAttribute="centerX" id="nII-Tt-9XJ"/>
+                            <constraint firstItem="7Ns-MZ-Z04" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="35" id="zjy-Pt-GqT"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="ברוכים הבאים" id="QcG-yk-Vq1"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="-338"/>
+        </scene>
+        <!--Gan Galit Table View Controller - גלריית תמונות-->
+        <scene sceneID="Zsb-bn-xTs">
+            <objects>
+                <viewController id="0bs-Zn-aAT" customClass="GanGalitTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="APb-aE-FsC"/>
+                        <viewControllerLayoutGuide type="bottom" id="XDh-la-mb6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="32m-7g-CLc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4j-nS-wgA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="גלריית תמונות" id="TR4-cU-s1X">
+                                        <barButtonItem key="rightBarButtonItem" title="תפריט ניווט" id="eMn-0H-KcS">
+                                            <connections>
+                                                <action selector="close:" destination="0bs-Zn-aAT" id="fd7-eR-K8w"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VE3-xk-jxt">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-yV-cFX">
+                                <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WO2-k5-vgg"/>
+                                    <barButtonItem title="עצור" id="OQZ-Pr-QvJ">
+                                        <connections>
+                                            <action selector="stopLoading" destination="VE3-xk-jxt" id="QaZ-gu-urZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="רענן" id="dVa-mx-hsJ">
+                                        <connections>
+                                            <action selector="reload" destination="VE3-xk-jxt" id="XKX-W0-b5U"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="קדימה" id="ffJ-Bb-QOB">
+                                        <connections>
+                                            <action selector="goForward" destination="VE3-xk-jxt" id="h15-tL-43Z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="אחורה" id="2s4-gR-q4P">
+                                        <connections>
+                                            <action selector="goBack" destination="VE3-xk-jxt" id="5jo-zn-xFd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4xp-yV-cFX" firstAttribute="leading" secondItem="32m-7g-CLc" secondAttribute="leading" id="0rm-XN-osT"/>
+                            <constraint firstItem="VE3-xk-jxt" firstAttribute="leading" secondItem="32m-7g-CLc" secondAttribute="leading" id="6fC-s1-ZZM"/>
+                            <constraint firstItem="VE3-xk-jxt" firstAttribute="bottom" secondItem="32m-7g-CLc" secondAttribute="bottom" id="Fzy-sk-x51"/>
+                            <constraint firstItem="v4j-nS-wgA" firstAttribute="leading" secondItem="32m-7g-CLc" secondAttribute="leading" id="L5T-h9-653"/>
+                            <constraint firstItem="4xp-yV-cFX" firstAttribute="trailing" secondItem="32m-7g-CLc" secondAttribute="trailing" id="gKO-fE-G4s"/>
+                            <constraint firstItem="4xp-yV-cFX" firstAttribute="top" secondItem="VE3-xk-jxt" secondAttribute="top" id="k5R-ca-APU"/>
+                            <constraint firstItem="VE3-xk-jxt" firstAttribute="trailing" secondItem="32m-7g-CLc" secondAttribute="trailing" id="s5e-6K-Iox"/>
+                            <constraint firstItem="4xp-yV-cFX" firstAttribute="top" secondItem="v4j-nS-wgA" secondAttribute="bottom" id="v37-CU-IjW"/>
+                            <constraint firstItem="v4j-nS-wgA" firstAttribute="trailing" secondItem="32m-7g-CLc" secondAttribute="trailing" id="wEx-Nn-49q"/>
+                            <constraint firstItem="v4j-nS-wgA" firstAttribute="top" secondItem="32m-7g-CLc" secondAttribute="top" id="wt3-1E-8L7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="גלריית תמונות" id="lOB-H1-byC"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="Toolbar" destination="4xp-yV-cFX" id="nBF-u5-azP"/>
+                        <outlet property="close" destination="eMn-0H-KcS" id="J2J-Sl-hHQ"/>
+                        <outlet property="webView2" destination="VE3-xk-jxt" id="n5f-uU-TdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PV-Ip-Tvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="-1359"/>
+        </scene>
+        <!--Gan Galit Loach Modaot - לוח הודעות-->
+        <scene sceneID="FBK-ZZ-xpF">
+            <objects>
+                <viewController id="znG-Cl-6cb" customClass="GanGalitLoachModaot" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ept-uV-xLX"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWI-Wl-bME"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QV8-Ri-i0l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ברוכים הבאים לאפליקציית" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-bh-CPC">
+                                <rect key="frame" x="45" y="44" width="320" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="QFT-qa-oHI"/>
+                                    <constraint firstAttribute="width" constant="320" id="kwg-un-GrN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Untitled2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-37-1TL">
+                                <rect key="frame" x="7" y="55" width="76" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="1Ml-QS-IYa"/>
+                                    <constraint firstAttribute="width" constant="76" id="qAc-Sq-A3F"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuY-vJ-RHf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="לוח הודעות" id="Lpw-XY-hcL">
+                                        <barButtonItem key="rightBarButtonItem" title="תפריט ניווט" id="lnA-6G-ypd">
+                                            <connections>
+                                                <action selector="close:" destination="znG-Cl-6cb" id="YA8-JN-yvt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKT-T0-AEI">
+                                <rect key="frame" x="0.0" y="117" width="320" height="318"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="401" id="rTB-op-yuO"/>
+                                </constraints>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIa-oo-hl7">
+                                <rect key="frame" x="0.0" y="474" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NL3-L5-CFm"/>
+                                    <barButtonItem title="עצור" id="KJx-bL-V99">
+                                        <connections>
+                                            <action selector="stopLoading" destination="VE3-xk-jxt" id="aPN-cG-D9p"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="רענן" id="Fza-hU-MeI">
+                                        <connections>
+                                            <action selector="reload" destination="VE3-xk-jxt" id="0KH-dO-gTx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="קדימה" id="N3j-YD-cPa">
+                                        <connections>
+                                            <action selector="goForward" destination="VE3-xk-jxt" id="bYb-AJ-yHr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="אחורה" id="J73-Kv-PzL">
+                                        <connections>
+                                            <action selector="goBack" destination="VE3-xk-jxt" id="SF6-wH-9lI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cri-nj-Hvy">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JqL-GR-JmT"/>
+                                    <barButtonItem title="עצור" id="abo-Pp-C9a">
+                                        <connections>
+                                            <action selector="stopLoading" destination="vKT-T0-AEI" id="dQQ-Xa-47E"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="רענן" id="DgI-ZT-yxx">
+                                        <connections>
+                                            <action selector="reload" destination="vKT-T0-AEI" id="fAV-pa-FYb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="קדימה" id="GsC-38-0Pn">
+                                        <connections>
+                                            <action selector="goForward" destination="vKT-T0-AEI" id="ZRz-Bf-afF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="אחורה" id="M0D-Bg-ZO0">
+                                        <connections>
+                                            <action selector="goBack" destination="vKT-T0-AEI" id="eAP-xh-Po1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iuY-vJ-RHf" firstAttribute="leading" secondItem="QV8-Ri-i0l" secondAttribute="leading" id="8hG-44-9vx"/>
+                            <constraint firstItem="cri-nj-Hvy" firstAttribute="bottom" secondItem="QV8-Ri-i0l" secondAttribute="bottom" id="BEK-a7-2mO"/>
+                            <constraint firstItem="iuY-vJ-RHf" firstAttribute="trailing" secondItem="QV8-Ri-i0l" secondAttribute="trailing" id="Bs2-4E-7dO"/>
+                            <constraint firstItem="cri-nj-Hvy" firstAttribute="trailing" secondItem="QV8-Ri-i0l" secondAttribute="trailing" id="C2Z-Qg-EH9"/>
+                            <constraint firstItem="vKT-T0-AEI" firstAttribute="trailing" secondItem="QV8-Ri-i0l" secondAttribute="trailing" id="EyO-y4-80v"/>
+                            <constraint firstItem="iuY-vJ-RHf" firstAttribute="top" secondItem="QV8-Ri-i0l" secondAttribute="top" id="Hcn-Oc-yuK"/>
+                            <constraint firstItem="vKT-T0-AEI" firstAttribute="bottom" secondItem="QV8-Ri-i0l" secondAttribute="bottom" id="O9l-3x-orW"/>
+                            <constraint firstItem="vKT-T0-AEI" firstAttribute="leading" secondItem="QV8-Ri-i0l" secondAttribute="leading" id="Qhq-M8-Zu4"/>
+                            <constraint firstItem="cri-nj-Hvy" firstAttribute="leading" secondItem="QV8-Ri-i0l" secondAttribute="leading" id="f8g-0Y-aD3"/>
+                            <constraint firstItem="Myp-bh-CPC" firstAttribute="top" secondItem="QV8-Ri-i0l" secondAttribute="top" constant="44" id="k1h-70-p3M"/>
+                            <constraint firstItem="vKT-T0-AEI" firstAttribute="top" secondItem="QhO-37-1TL" secondAttribute="bottom" constant="2" id="krs-NI-PhT"/>
+                            <constraint firstItem="Myp-bh-CPC" firstAttribute="leading" secondItem="QV8-Ri-i0l" secondAttribute="leading" constant="45" id="oC8-Cy-RmL"/>
+                            <constraint firstItem="QhO-37-1TL" firstAttribute="leading" secondItem="QV8-Ri-i0l" secondAttribute="leading" constant="8" id="qMd-Kv-gkr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="לוח הודעות" id="Fvk-I2-cv9"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="Toolbar2" destination="nIa-oo-hl7" id="cEA-Fs-6dn"/>
+                        <outlet property="webView22" destination="vKT-T0-AEI" id="gLL-wi-fTR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50f-Cr-Spv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="333"/>
+        </scene>
+        <!--Gan Galit Phone Book - ספר טלפונים-->
+        <scene sceneID="JtV-Om-aGV">
+            <objects>
+                <tableViewController id="4fl-gb-1P6" customClass="GanGalitPhoneBook" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NlQ-rh-Lae">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="gcN-dP-See">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="4fl-gb-1P6" id="zYt-Es-tg7"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="Cell" textLabel="AfU-Uu-DhV" style="IBUITableViewCellStyleDefault" id="luq-c2-CHm">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="luq-c2-CHm" id="zmU-Ye-ZLs">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AfU-Uu-DhV">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="4fl-gb-1P6" id="17V-D8-chb"/>
+                            <outlet property="delegate" destination="4fl-gb-1P6" id="ds8-oH-4Ao"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ספר טלפונים" id="NJb-7y-BwX"/>
+                    <connections>
+                        <outlet property="TableView" destination="NlQ-rh-Lae" id="xEZ-p5-u5y"/>
+                        <outlet property="searchDisplayController" destination="RbJ-rk-yRH" id="k1K-h8-KHz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zup-r4-Hy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="LzE-Wl-rfg">
+                    <connections>
+                        <outlet property="delegate" destination="4fl-gb-1P6" id="xs1-bk-An8"/>
+                        <outlet property="searchContentsController" destination="4fl-gb-1P6" id="HaI-9y-ibE"/>
+                        <outlet property="searchResultsDataSource" destination="4fl-gb-1P6" id="U3W-iu-c7Z"/>
+                        <outlet property="searchResultsDelegate" destination="4fl-gb-1P6" id="SrQ-Gd-gs2"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="6K4-c5-rIB">
+                    <connections>
+                        <outlet property="delegate" destination="4fl-gb-1P6" id="cmm-AO-vvR"/>
+                        <outlet property="searchContentsController" destination="4fl-gb-1P6" id="QC9-dd-2dl"/>
+                        <outlet property="searchResultsDataSource" destination="4fl-gb-1P6" id="gPx-GZ-qWV"/>
+                        <outlet property="searchResultsDelegate" destination="4fl-gb-1P6" id="Od4-hI-CT6"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="mrK-og-0eO">
+                    <connections>
+                        <outlet property="delegate" destination="4fl-gb-1P6" id="OAR-js-VPB"/>
+                        <outlet property="searchContentsController" destination="4fl-gb-1P6" id="Vbj-yk-6jd"/>
+                        <outlet property="searchResultsDataSource" destination="4fl-gb-1P6" id="mBq-sC-eZc"/>
+                        <outlet property="searchResultsDelegate" destination="4fl-gb-1P6" id="XHh-My-k3o"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="RbJ-rk-yRH">
+                    <connections>
+                        <outlet property="delegate" destination="4fl-gb-1P6" id="DfG-3I-wgj"/>
+                        <outlet property="searchBar" destination="gcN-dP-See" id="ipd-rP-EZk"/>
+                        <outlet property="searchContentsController" destination="4fl-gb-1P6" id="O4U-du-CF8"/>
+                        <outlet property="searchResultsDataSource" destination="4fl-gb-1P6" id="qi0-OA-CBR"/>
+                        <outlet property="searchResultsDelegate" destination="4fl-gb-1P6" id="Hv6-Ka-bgp"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2654" y="-670"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VRx-3C-piJ">
+            <objects>
+                <tabBarController id="kkJ-fp-Yrh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="iXd-30-Hph"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Tmk-oz-gvQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="znG-Cl-6cb" kind="relationship" relationship="viewControllers" id="dDO-1f-kcw"/>
+                        <segue destination="0bs-Zn-aAT" kind="relationship" relationship="viewControllers" id="0KH-0g-pE3"/>
+                        <segue destination="GxT-ri-UAU" kind="relationship" relationship="viewControllers" id="fgi-kn-Uy2"/>
+                        <segue destination="7HB-9L-RkV" kind="relationship" relationship="viewControllers" id="ptd-JS-S1l"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48x-VD-R19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="-570"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yzq-qD-wsL">
+            <objects>
+                <navigationController id="0CF-uc-Ia9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x12-pD-ZH7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hI1-jn-572">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Y8k-Sp-t7H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLp-uJ-pHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="-338"/>
+        </scene>
+        <!--Navigation Controller - ספר טלפונים-->
+        <scene sceneID="4E3-RO-3CF">
+            <objects>
+                <navigationController id="GxT-ri-UAU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ספר טלפונים" id="gky-UM-Rbh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oKW-1N-yL6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4fl-gb-1P6" kind="relationship" relationship="rootViewController" id="eHd-E8-Cw4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLs-Ue-S72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="-670"/>
+        </scene>
+        <!--Instant Massage View Controller - הודעות מיידיות לגננת-->
+        <scene sceneID="RKQ-hT-bJB">
+            <objects>
+                <tableViewController id="y96-la-55f" customClass="instantMassageViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="q8u-GU-7nK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="hgc-zu-2pw">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="y96-la-55f" id="ZBq-9P-sMX"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="Cell" textLabel="ohi-8u-c1v" style="IBUITableViewCellStyleDefault" id="nnC-6K-O4U">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nnC-6K-O4U" id="4Ox-VO-9Ea">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ohi-8u-c1v">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="y96-la-55f" id="pMS-37-EG0"/>
+                            <outlet property="delegate" destination="y96-la-55f" id="rvC-yB-8ZG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="הודעות מיידיות לגננת" id="h1G-0Y-eC1"/>
+                    <connections>
+                        <outlet property="TableView" destination="q8u-GU-7nK" id="r0I-Pn-CbW"/>
+                        <outlet property="searchDisplayController" destination="RbJ-rk-yRH" id="OB3-EI-SMn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sly-AX-rh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="QhS-Ay-RbS">
+                    <connections>
+                        <outlet property="delegate" destination="y96-la-55f" id="nbU-24-sZ8"/>
+                        <outlet property="searchContentsController" destination="y96-la-55f" id="knE-MS-LLp"/>
+                        <outlet property="searchResultsDataSource" destination="y96-la-55f" id="20E-KN-NA3"/>
+                        <outlet property="searchResultsDelegate" destination="y96-la-55f" id="PIg-jn-aB5"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="LEe-eF-oGt">
+                    <connections>
+                        <outlet property="delegate" destination="y96-la-55f" id="O3j-3n-jXt"/>
+                        <outlet property="searchContentsController" destination="y96-la-55f" id="sTr-OE-puj"/>
+                        <outlet property="searchResultsDataSource" destination="y96-la-55f" id="Usw-tr-vae"/>
+                        <outlet property="searchResultsDelegate" destination="y96-la-55f" id="7nx-Q2-htW"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="bbU-P7-1Ph">
+                    <connections>
+                        <outlet property="delegate" destination="y96-la-55f" id="dar-ww-m8D"/>
+                        <outlet property="searchContentsController" destination="y96-la-55f" id="W1t-Z4-QsV"/>
+                        <outlet property="searchResultsDataSource" destination="y96-la-55f" id="ufO-Kc-P2y"/>
+                        <outlet property="searchResultsDelegate" destination="y96-la-55f" id="4ve-4k-4NS"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="mVI-Xg-HvN">
+                    <connections>
+                        <outlet property="delegate" destination="y96-la-55f" id="E69-Dd-1r2"/>
+                        <outlet property="searchBar" destination="hgc-zu-2pw" id="HpF-Ih-NmF"/>
+                        <outlet property="searchContentsController" destination="y96-la-55f" id="xAK-9F-agF"/>
+                        <outlet property="searchResultsDataSource" destination="y96-la-55f" id="lfZ-dU-GXT"/>
+                        <outlet property="searchResultsDelegate" destination="y96-la-55f" id="6me-1i-2Rf"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1571" y="318"/>
+        </scene>
+        <!--Navigation Controller - הודעות מיידיות לגננת-->
+        <scene sceneID="X8g-qo-dQR">
+            <objects>
+                <navigationController id="7HB-9L-RkV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="הודעות מיידיות לגננת" id="93L-Ag-nZZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZLg-vJ-U7V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y96-la-55f" kind="relationship" relationship="rootViewController" id="Syk-cL-D0G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdy-SC-G25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Untitled.jpg" width="404" height="210"/>
+        <image name="Untitled.png" width="326" height="58"/>
+        <image name="Untitled2.jpg" width="140" height="45"/>
+        <image name="Untitled2.jpg" width="140" height="45"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
