@@ -27,28 +27,28 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cellname = [tableView cellForRowAtIndexPath:indexPath];
-    if ([cellname.textLabel.text isEqual:@"עידו שייביץ"])
+    if ([cellname.textLabel.text isEqual:@"X"])
     {
     UIAlertView *messageAlert = [[UIAlertView alloc]
-        initWithTitle:@"בחרת בטלפון של עידו שייביץ" message:@"הפניית שיחה מתבצעת." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0504584988"]];
+        initWithTitle:@"בחרת בטלפון של" message:@"הפניית שיחה מתבצעת." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:number"]];
     
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         [messageAlert show];
     }
-    if ([cellname.textLabel.text isEqual:@"הטלפון המרכזי של הגן"])
+    if ([cellname.textLabel.text isEqual:@"y])
     {
         UIAlertView *messageAlert = [[UIAlertView alloc]
-            initWithTitle:@"בחרת בטלפון המרכזי של הגן" message:@"הפניית שיחה מתבצעת." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:099584988"]];
+            initWithTitle:@"ב- הגן" message:@"הפניית שיחה מתבצעת." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:number2"]];
         
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         [messageAlert show];}
-    if ([cellname.textLabel.text isEqual:@"הגננת (גלית שייביץ)"])
+    if ([cellname.textLabel.text isEqual:@"Z"])
     {
         UIAlertView *messageAlert = [[UIAlertView alloc]
-                                     initWithTitle:@"בחרת בטלפון של הגננת - גלית שייביץ" message:@"הפניית שיחה מתבצעת." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:099584988"]];
+                                     initWithTitle:@"P" message:@"הפניית שיחה מתבצעת." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:number3"]];
         
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         [messageAlert show];}
@@ -56,7 +56,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataArray = [NSArray arrayWithObjects:@"עידו שייביץ" ,@"הטלפון המרכזי של הגן",@"הגננת (גלית שייביץ)", nil];
+    self.dataArray = [NSArray arrayWithObjects:@"a",nil];
 [_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
    [_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
     // Uncomment the following line to preserve selection between presentations.
